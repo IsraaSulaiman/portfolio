@@ -1,0 +1,662 @@
+
+		@font-face{
+			font-family: my_eurostile;
+    		src: url(fonts/eurostile.woff);
+	}
+
+		@font-face{
+			font-family: bold_eurostile;
+    		src: url(fonts/eurostile-bold.woff);
+	}
+
+		@font-face{
+			font-family: europa;
+    		src: url(fonts/europa-light.woff);
+	}
+
+		body {
+			background-color: white;
+			margin:0;
+			padding:0;
+			font-family: 'Roboto', sans-serif;
+	}
+
+		nav {
+			margin:0;
+			padding:0;
+			background-color: #68bab8;
+			width: 100%;
+	}
+
+		nav ul{
+			margin:0 auto;
+			width: 90%;
+			padding: 0;
+
+	}
+		nav li{
+			display: inline-block;
+			list-style: none;
+			padding:20px;
+	}
+
+		 nav a {
+    		text-decoration: none;
+			color: white;
+			font-size: 14px;
+			font-family:arial;
+			text-transform: uppercase;
+			font-weight: 500px;
+			text-align: center;
+	}
+		
+
+		nav a:hover{
+			color: black;
+			font-weight: bold;
+			text-decoration: underline;
+			box-sizing: border-box;
+	}
+
+		.toggle {
+			width:100%;
+			text-align: right;
+			font-size: 30px;
+			display: inline;
+			padding:10px 20px 10px 20px;
+			color:#eeeeee; 
+			display: block;
+			display: none;
+		}
+		@media (max-width:768px)
+	{
+		.toggle {
+			display: block;
+		}
+		nav ul 
+		{
+			width:100%;
+			display:none;
+		}
+
+		nav ul li
+		{
+			display:block;
+			text-align: center;
+		}
+		.active {
+			display: block;
+		}
+		
+	}
+
+ 		.intro {
+ 			margin-top: 100px;
+	}
+ 
+	
+		.title {
+			font-family: 'bold_eurostile'; 
+			word-spacing:.4px;
+			text-rendering: optimizeLegibility;
+			text-align: center;
+			font-weight:bold;
+	}
+		.intro h1 {
+			font-size: 40px;
+		    color: #0a0a0a;
+
+
+		}
+
+		.intro h2 {
+			font-family: "europa"; 
+			font-size: 20px;
+			text-align: center;
+			color: rgba(10,10,10,0.9);
+			font-smoothing:antialiased;
+			line-height: 28px;
+	}
+		 .center {
+			margin-left: auto;
+			margin-right: auto;
+			max-width:50%;
+			display: block;
+
+		}
+
+		.intro img {
+			
+			margin-top: -18px;
+
+	}
+
+	
+		#about_me {
+			background: linear-gradient(to bottom, #68bab8, #70d3d3);
+	}
+		#about_me .container {
+				position: relative;
+				width:60%;
+				margin-left: auto;
+				margin-right:auto;
+			
+		}
+
+		#about_me h1{
+			font-size: 30px;
+			color: white;
+       		padding-top: 120px;
+	}
+
+		#about_me p {
+			font-size: 18px;
+			font-family:  "europa";
+			line-height: 1.5;
+			font-weight: 300;
+			color: white;
+    		letter-spacing: .7px;
+    		word-break: break-word;
+    		padding-top: 15px;
+    		padding-bottom: 240px;
+    		text-align:center;
+	}
+		@media (max-width: 769px){
+			#about_me .container {
+				position: relative;
+				width:90%;
+				margin-left: auto;
+				margin-right:auto;
+			}
+
+		}
+
+
+		.box{
+			background-color: white;
+			border-radius: 12px;
+			border: .2px solid #61c5c1;
+			color: #293347;
+			box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
+			margin-top: -150px;
+			padding:0px;
+			position:relative;
+			width:90%;
+			margin-left:auto;
+			margin-right:auto;
+			min-height: 590px;
+
+		}
+		
+		.column {
+			width:32.9%;
+			float:left;
+			border-right: 1px solid #E6ECF8;
+	}
+		div #write {
+				border-right: none !important; 
+			}
+
+		.clearfix{
+			content: "";
+			clear:both;
+			display: table;
+
+		}
+
+		.column img {
+			width:20%;
+			margin-top: 50px;
+    		padding-bottom: 6px;
+	}
+
+
+		.column h1  {
+			color: black;
+			font-size:22px;
+			font-family:  'bold_eurostile';
+			line-height: 1.5;
+			font-weight: 300;
+			text-align:center;
+	}
+
+		.column h2 {
+			color: #68bab8;
+			font-size:20px;
+			font-family:  'bold_eurostile';
+			text-align: center;
+	}
+
+		.column p {
+			text-align: center;
+			line-height: 2;
+	}
+
+		.column ul {
+    		margin-bottom:20px;
+    		padding-left:0;
+
+	}
+
+		.column li {
+			display: block;
+			line-height: 2;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			width:50%;
+
+	}
+		@media (max-width: 769px){
+			.box {
+				height: 1700px;
+			}
+			.column {
+				width:100%;
+				display:block;
+				border-right: none;
+				border-bottom: 1px solid #E6ECF8;
+	
+			}
+			div #write {
+				border-bottom: none;
+			}
+		}
+			
+
+		.links-container {
+			margin:0;
+			border-bottom: 1px solid #E6ECF8;
+	}
+
+		div #my-links {
+		margin:100px auto;	
+		width:80%;
+		position: relative;
+
+
+		}
+		div .inline {
+			display: inline-block;	
+			margin:10px 50px;
+			width:23%;
+		}
+				
+		#my-links img {
+			width:100%;
+			max-width:100%;
+			height:auto;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+			
+				
+		@media (max-width:768px){
+				
+				div .inline{
+				display:block;		
+				width: 40%;	
+				margin: 30px auto;	}
+				
+		}
+		@media (max-width:1250px) and (min-width:768px){
+				
+				div .inline{
+				margin:10px 30px;}
+
+		}
+
+		
+		#portfolio {
+			margin-top:110px;
+			margin-bottom:50px;
+			
+	}
+
+		#portfolio h1 {
+			font-size: 2rem;
+			font-family:  'bold_eurostile';
+			line-height: 1.125;
+			color: #293347;
+    		letter-spacing: .7px;
+    		text-align: center;
+    		font-weight: 800;
+    		word-break: break-word;
+	}
+
+		#portfolio p {
+			text-align: center;
+			line-height: 1.5;
+			font-weight:300;
+			font-family: "europa";
+			font-size:19px;
+			word-break:break-word;
+			color: #4a4a4a;
+			letter-spacing: .5px;
+	}
+
+		#portfolio a {
+			color: #9cb4d8;
+			font-weight: bold;
+			text-decoration: none;
+	}
+
+		#portfolio a:hover {
+			color: #79cbc9;
+			font-weight: bold;
+			text-decoration: underline;
+	}
+
+
+		div #samples{
+		width:80%;
+		margin-top: 90px;
+		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right:auto;
+
+	}
+		.center-image{
+			display: inline-block;
+			width:45%;
+			margin:10px 10px;
+			position: relative;
+		}
+		
+
+		#samples img {
+			width: 100%;
+			float: left;
+			border-radius: 12px;
+		    /* border: 1px solid #61c5c1; */
+			box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
+			height: auto;
+	}
+		/* .overlay {
+ 			position: absolute;
+  			top: 0;
+			bottom: 0;
+ 			left: 0;
+  			right: 0;
+			height: 100%;
+  			width: 100%;
+  			opacity: 0;
+  			transition: 0.5s ease;
+  			background-color:#293347;
+	}
+	*/
+
+		.center-image:hover .overlay {
+  			opacity: 1;
+	}
+
+		/* .text {
+			padding:20px 30px;
+			background-color: #79cbc9;
+			border-radius: 7px;
+  			color: white;
+  			font-size: 20px;
+  			position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+	}
+*/
+
+		@media (max-width: 769px){
+
+			.center-image{
+				width:100%;
+				display:block;
+				margin: 40px auto;
+			}
+
+			div.center-image::after{
+				content: "";
+				clear:both;
+				display:table;
+
+			}
+		
+	}
+		
+
+		/* figcaption {
+			position:relative;
+			top:-150px;
+			opacity:0;
+
+		}
+		.fig_button {
+			width:15%;
+			text-align: center;
+			background-color:#68bab8;
+			color:white;
+			margin-left: 80px;
+			
+		}
+		#sample_1: hover {
+			background-color:black;
+		}  */ 
+		#button {
+			margin-left:auto;	
+			margin-right:auto;
+			margin-bottom: 200px;	
+		}
+		#button a {
+			width:50%;
+			margin-right: auto;
+			margin-left: auto;
+			display: block;
+			text-align:center;
+		}
+		
+	
+		
+
+		input[type=button].btn {
+			width:175px;
+ 			height:45px;
+ 			text-align:center;
+ 			font-size:19px;
+			margin:10px auto;
+			background: linear-gradient(#68bab8, #70d3d3);
+			font-weight: bold;
+ 			border: 2px solid;
+ 			border-radius: 25px;
+ 			color: #fff;
+
+	}
+
+
+	 	input[type=button].btn:hover {
+ 			color: #595959;
+ 			font-weight: bold;
+ 			box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2), 0 0 0 1px #a09d9d;
+	 }
+	 	.container {
+	 		background: linear-gradient(to bottom, #68bab8, #70d3d3);
+
+	 	}
+		
+		.contactMe {
+			width: 60%;
+    		box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2), 0 0 0 1px #293347;
+    		border-radius: 25px;
+ 			margin-left: auto;
+ 			margin-right: auto;
+ 			max-height:500px;
+			padding: 5px;
+			color:white;
+			background-color: #595959;
+ 			font-family: "europa";
+ 			word-spacing:3px;
+ 			line-height:1.5;
+ 			text-align: center;
+ 			font-size:10px;
+ 			z-index:1;
+ 			position: relative;
+ 			top:-90px;
+
+		}
+		@media (max-width:769px){
+			.contactMe {
+				width: 90%;
+			}
+		}
+		.contactMe h1 {
+    		padding: 25px;
+			font-family: "europa";
+			font-size: 22px;
+			font-weight: 300;
+			line-height: 1.5;
+	}
+
+		* {
+   		 box-sizing: border-box;
+	}
+
+		
+		.row .left-col{
+			float: left;
+			width: 25%;
+			padding: 10px;
+
+
+	}
+
+		.row .right-col {
+			float:left;
+			width: 75%;
+			margin-top:12px;
+	}
+
+		.row:after {
+   		 content: "";
+   		 display: table;
+    	clear: both;
+	}
+
+		input[type=text], textarea {
+			width: 80%;
+    		border: 1px solid  #68bab8;
+    		border-radius: 5px;
+    		font-size: 15px;
+    		font-family: 'europa';
+    		resize: vertical;
+    		padding: 10px;
+
+	}
+
+		label {
+			font-family: 'europa';
+			font-size:17px;
+			font-weight: 500;
+			padding: 10px 0;
+			display: inline-block;
+	}
+		input[type=submit]{
+			width:175px;
+ 			height:45px;
+ 			text-align:center;
+ 			font-size:19px;
+			margin:30px auto;
+			background: linear-gradient(#68bab8, #70d3d3);
+			font-weight: bold;
+ 			border: 1px solid #595959;
+ 			border-radius: 25px;
+ 			color: #fff;
+	}
+
+	 	input[type=submit]:hover {
+ 			color: #595959;
+ 			font-weight: bold;
+ 			box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2), 0 0 0 1px #a09d9d;
+	 }
+
+
+	 	footer {
+	 		margin-bottom:0;
+	 		background-color: #70d3d3;		
+
+	 }
+	
+
+		.footer-bottom #slogan{
+			font-size:1.6rem;
+			text-align: center;
+			font-family: "my_eurostile";
+			color:#293347;
+			opacity:.7;
+			font-weight: 300;
+
+	}
+
+		
+	div #social_signals {
+		margin:50px auto;	
+		max-width:50%;
+		position: relative;
+
+	}
+	
+	#social_signals ul {
+		list-style-type: none;
+		max-width:50%;
+		margin-left: auto;
+		margin-right:auto;
+
+	}
+
+	#social_signals li {
+		display:inline;
+		padding:0 15px;
+		width:15%;
+
+	}
+
+	 .icon {
+		margin-left:auto;
+		margin-right:auto;
+		font-size:25px;
+		color: #293347;
+		opacity: .7;
+
+
+	}	
+
+	@media (max-width:769px){
+		#social_signals li {
+		display:block;
+		padding:15px 0;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	#social_signal ul {
+		margin-right: auto;
+		margin-left: auto;
+	}
+		#social_signals .icon {
+		width: 30%;
+		margin-left:auto;
+		margin-right:auto;
+
+	}
+	
+
+	}	
+
+	 	#copyrights {
+		font-size: 17px;
+		padding-bottom:50px;
+		margin-top: 70px;
+		text-align: center;
+		font-family: "my_eurostile";
+		color:#293347;
+		opacity:.7;
+		font-weight: 300;
+	}
+
+
+	

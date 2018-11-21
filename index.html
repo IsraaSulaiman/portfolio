@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Israa Sulaiman | Developer, Translator & Content Writer</title>
+ 	<link href="style.css" type="text/css" rel="stylesheet">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+</head>
+
+<body>
+<nav>
+<div class="toggle">
+	<i class="fas fa-bars menue"></i>
+</div>
+	<ul>
+		<li><a href="#about_me">About Me</a></li>
+		<li><a href="#skills">Skills</a></li>
+		<li><a href="#portfolio">My Portfolio</a></li>
+		<li><a href="#contacts">Contact Me</a></li>
+	</ul>
+	
+</nav>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type= "text/javascript">
+		$(document).ready (function(){
+		$(".menue").click (function(){
+		$('ul').toggleClass ('active');
+	})
+		})
+    </script>
+</div>
+
+<div class="intro">
+	<h1 class="title">Developer, Translator & Content Writer</h1>
+	<h2>I write and code beautifully, and I love what I do.</h2>
+	<img src="imgs/prg.jpg" class="center">
+</div>
+
+<main>
+	<div id="about_me">
+	<div class="container">
+		<h1 class="title">Hi, I'm Israa. Welcome to my world.</h1>
+		<p>I am thrilled to annouce the launch of my porfolio website which I've built myself using HTML and CSS. I feel very excited everytime I see the outcomes of my work. I know it is not perfect, but it still feels great to be able to create something from scratch. This is still the beginning. The best is yet to come. I can describe myself as quietly confident, naturally curious, and perpetually working on improving my chops.</p> 
+		</div>	
+	</div>
+
+	<div class="box" id="skills">
+		<div class="column">
+			<div><img src="imgs/trans.jpg" class="center">
+				<h1>Translator</h1>
+				<p>I make sure my translation conveys the exact meaning of original texts.</p><br>
+				<h2>Content I translate:</h2>
+			<ul>
+				<li>General texts</li>
+				<li>Academic researches</li>
+				<li>Technical texts</li>
+				<li>Press releases</li>
+				<li>Website content</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="column">
+		<div><img src="imgs/code.jpg" class="center">
+			<h1>Front-end Developer</h1>
+			<p>I tend to code things from scratch and I enjoy bringing ideas to life in the browser.</p><br>
+			<h2>Languages I write:</h2>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>Javascript</li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+				
+		</div>
+	</div>
+
+	<div class="column" id="write">
+		<div >
+			<img src="imgs/write.jpg" class="center">
+			<h1>Content Writer</h1>
+			<p>I craft my content in a creative framework to hook the attention of my readers.</p><br>
+			<h2>My writing services:</h2>
+		<ul>
+			<li>Short stories</li>
+			<li>Research papers</li>
+			<li>Media output</li>
+			<li>Blogs</li>
+			<li>Product Descriptions</li>
+		</ul>
+		</div>
+
+	</div>	
+	<div class= clearfix></div>
+	</div>
+
+
+	<div class="links-container">
+		<div id="my-links">
+			<div class="inline"><a href="https://www.freecodecamp.org/israasulaiman" target="_blank"><span title="review my freecodecamp"><img src="imgs/codecamp.png" class="responsive"></span></a></div>
+			<div class="inline"><a href="https://www.codewars.com/users/IsraaSulaiman" target="_blank"><span title="review my codewar profile"><img src="imgs/codewars.png" class="responsive"></span></a></div>
+			<div class="inline"><a href="https://github.com/IsraaSulaiman" target="_blank" id="link_3"><span title="review my projects on github"><img src="imgs/github.png" class="responsive"></span></a></div>
+			<div class="clearboth"></div>
+
+		</div>
+	</div>
+
+	<div id="portfolio">
+		<div><h1>My Recent Work</h1>
+			<p>Here are a few recent web development projects. Want to see more?<a href="#contacts" color:> Message me.</a></p>
+		</div>
+
+	<div id="samples">
+		<div class="center-image"><a href="#"><img src="imgs/comingsoon.jpg"></a></div>
+		<div class="center-image"><a href="#"><img src="imgs/comingsoon.jpg"></a></div>
+
+ 	</div>
+
+	<div class="clearfix"></div>
+	</div>	
+
+	<div id= "button"><a href="#"><input type="button" value= "See More" class="btn" style="height:55px"></a></div>
+
+</main>
+
+
+<footer>
+	<div class="contactMe" id="contacts">
+		<h1>Interested in working together? Then drop a message.</h1>
+	<form>
+	<div class="row">
+		<div class="left-col">
+			<label for= "name">Name</label>
+		</div>
+
+		<div class="right-col">
+			<input type="text" id= "name" placeholder="Your Name">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="left-col">
+			<label for= "email">Email</label>
+		</div>
+
+		<div class="right-col">
+			<input type="text" id= "email" placeholder="Your Email">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="left-col">
+			<label for= "subject">Subject</label>
+		</div>
+
+		<div class="right-col">
+			<textarea id= "subject" placeholder="What's your message?"></textarea>
+		</div>
+	</div>
+
+    <div class="row">
+      	<input type="submit" value="Submit">
+    </div>
+
+</form>
+</div>
+
+<div class="footer-bottom">
+	<p id="slogan">Living, Learning, & Creating <br>with Passion and Love</p>
+	<div id="social_signals">
+	<ul>
+		<li><a href="https://www.facebook.com/israa.suliman.1" target="_blank"><span title="follow me on facebook"><i class="fab fa-facebook-square icon"></span></i></a></li>
+		<li><a href="https://twitter.com/IsraaRabah" target="_blank"><span title="follow me on twitter"><i class="fab fa-twitter-square icon"></span></i></a></li>
+		<li><a href="https://www.instagram.com/israa.suliman/" target="_blank"><span title="follow me on instagram"><i class="fab fa-instagram icon"></span></i></a></li>
+		<li><a href="#" target="_blank"><span title="call me via whatsapp"><i class="fab fa-github-square icon"></span></i></a></li>
+	</ul>
+	</div>
+<p id="copyrights">Handcrafted by Israa Sulaiman &copy;2018 </p>
+
+</div>
+</footer>
+
+
+</body>
+</html>
